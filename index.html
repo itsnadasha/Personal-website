@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css"> 
+
+    <!-- //Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=
+    Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+    <!-- Vollkorn font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- footer  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">  <img src="images/logo.png" alt="logo-a-cup-of-tea" > </a>
+        </div>
+        
+        <nav class="nav-bar"> 
+            <a href="index.html"> Home </a>
+            <a href="gallery.html"> Journal </a>
+            <a href="contact.html"> contact </a>
+            <a href="about.html"> About </a>
+            <a href="quiz.html"> Quiz </a>
+            <a href="game.html"> ✃ </a>
+        </nav>
+        <hr> 
+    </header>
+
+    <section>
+        <div class="grid-container">
+            <div class="grid">
+                <p style=" color: #3f281a;">
+                    <span style="font-size: larger; font-weight: 600;"> A Cup of Tea</span>  is a glance of thoughts and inner reflections 
+                  of a young adult trying to make the most of the college experience
+                   without losing the rest of life.<br><br>
+                </p>
+
+                <h4 style="color: #312a25;">
+                    Romanticize
+                </h4>
+                    <a href="https://www.merriam-webster.com/dictionary/romanticize" style="text-decoration: none; color: #4f4d4d;"> verb </a>
+                    <p class="def" style="color: rgb(240, 232, 209); font-size: medium; ">
+                    : to make romantic <br> : treat as idealized or heroic <br><br>
+                    </p>
+                    <p style="color: #3f281a;">in this blog we focus on romanticising life each day to appreciate
+                        what is available and to make pain bearable.    
+                    </p>
+                    <span style="font-size: larger;" id="time"></span><br>
+                    <span style="font-size: larger;" id="greeting"></span>
+
+            </div>
+            <div class="grid" >
+                <figure>
+                    <img src="images/tumblr_oljl2cPMcC1ues1b6o2_r2_1280.jpg" alt="a woman laying down">
+                    <figcaption style="font-size: small;">Malcolm Liepke ''Repose'' , 1953</figcaption>
+             </figure>
+            
+            </div>
+            
+
+            <script type="text/javascript" charset="utf-8">
+
+                let a;
+                let time;
+                //method 
+                setInterval(() => {
+                  a = new Date();
+                  
+                  time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+                  document.getElementById('time').innerHTML = time;
+                }, 1000);
+
+                //greeting method
+                a = new Date();
+                hours = a.getHours();
+                switch (true) {
+                    case hours >= 5 && hours < 12:
+                     greeting = "Have a great day";
+                     break;
+                    case hours >= 12 && hours < 18:
+                      greeting = "Good afternoon friend";
+                         break;
+                    default:
+                         greeting = "Wish you a lovely night";
+                         break;
+
+                        }
+                document.getElementById("greeting").innerHTML = greeting;
+              </script>
+              
+            
+        </div> 
+    </section>
+    
+    <hr> 
+    
+    <footer>
+        <div>
+            <p>“Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.” </p>
+        </div>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+</html>

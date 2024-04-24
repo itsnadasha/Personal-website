@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Blog</title>
+    <link rel="stylesheet" href="index.css"> 
+    <script src="contact.js" async> </script>
+    
+    <!-- Vollkorn font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- //Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- footer  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">  <img src="images/logo.png" alt="logo-a-cup-of-tea" > </a>
+        </div>
+        
+        <nav class="nav-bar"> 
+            <a href="index.html"> Home </a>
+            <a href="gallery.html"> Journal </a>
+            <a href="contact.html"> contact </a>
+            <a href="about.html"> About </a>
+            <a href="quiz.html"> Quiz </a>
+            <a href="game.html"> ✃ </a>
+        </nav>
+        <hr> 
+    </header>
+    
+    <div class="contact-us"> 
+        <h2> Contact Us </h2>
+
+        <form id="contact" method="post" style="width: max-content;">
+            <div id="form-field"> 
+                <input type="text" name="name" id="name" class="text-box" placeholder="Your name" required> 
+                <small></small>
+            </div>
+
+            <div id="form-field">
+                <input type="email" name="email" id="email" class="text-box" placeholder="Your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                <small></small>
+            </div>
+
+            <div id="form-field">
+                <input type="text" name="subject" id="subject" class="text-box" placeholder="Subject" required>
+                <small></small>
+            </div>
+
+            <div id="form-field"> 
+                <textarea name="message" id="message" rows="6" placeholder="Write your message" maxlength="350" required></textarea>
+                <small></small>
+            </div>
+
+            <!-- captcha -->
+            <div id="form-field">
+                <p id="captcha-question" style="color: azure; font-size: larger; background-color: darkgrey;"></p>
+                <input type="text" name="captcha-answer" id="captcha-answer" placeholder="Enter the answer" required><br>
+                <small id="captcha-error" class="error-message"  style="color: azure; font-size: larger; background-color: darkgrey;"></small>
+            </div>
+
+            <!-- submit butn  -->
+            <div id="form-field"> 
+                <input type="submit" name="submit" class="send-btn" value="Send">
+                <small></small>
+            </div> 
+            
+        </form>
+    </div>
+
+    <hr> 
+    
+    <footer>
+        <div>
+            <p>“Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.” </p>
+        </div>
+        <p>All rights reserved</p>
+    </footer>
+
+</body>
+</html>
